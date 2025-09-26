@@ -1,0 +1,1303 @@
+{
+    "item": [
+        {
+            "id": "fd30c0af-1ec2-446c-8adb-f375ffef93fa",
+            "name": "accounts",
+            "item": [
+                {
+                    "id": "7e9edb79-0f86-47b9-a51b-691c8f59c0d4",
+                    "name": "{{baseUrl}}/accounts",
+                    "request": {
+                        "name": "{{baseUrl}}/accounts",
+                        "description": {},
+                        "url": {
+                            "path": [
+                                "accounts"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "header": [
+                            {
+                                "disabled": false,
+                                "description": "The time when the PSU last logged in with the TPP. \nAll dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below: \nSun, 10 Sep 2017 19:43:31 UTC",
+                                "key": "x-fapi-auth-date",
+                                "value": "<string>"
+                            },
+                            {
+                                "disabled": false,
+                                "description": "The PSU's IP address if the PSU is currently logged in with the TPP.",
+                                "key": "x-fapi-customer-ip-address",
+                                "value": "<string>"
+                            },
+                            {
+                                "disabled": false,
+                                "description": "An RFC4122 UID used as a correlation id.",
+                                "key": "x-fapi-interaction-id",
+                                "value": "<string>"
+                            },
+                            {
+                                "disabled": false,
+                                "description": "Indicates the user-agent that the PSU is using.",
+                                "key": "x-customer-user-agent",
+                                "value": "<string>"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application/json; charset=utf-8"
+                            }
+                        ],
+                        "method": "GET"
+                    },
+                    "response": [
+                        {
+                            "id": "f9b257c2-6d21-4088-80ab-6ceb73eccc1a",
+                            "name": "Accounts Read",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "accounts"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "header": [
+                                    {
+                                        "disabled": false,
+                                        "description": "The time when the PSU last logged in with the TPP. \nAll dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below: \nSun, 10 Sep 2017 19:43:31 UTC",
+                                        "key": "x-fapi-auth-date",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "The PSU's IP address if the PSU is currently logged in with the TPP.",
+                                        "key": "x-fapi-customer-ip-address",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "An RFC4122 UID used as a correlation id.",
+                                        "key": "x-fapi-interaction-id",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "(Required) An Authorisation Token as per https://tools.ietf.org/html/rfc6750",
+                                        "key": "Authorization",
+                                        "value": "proident in"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "Indicates the user-agent that the PSU is using.",
+                                        "key": "x-customer-user-agent",
+                                        "value": "<string>"
+                                    }
+                                ],
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "disabled": false,
+                                    "description": "(Required) An RFC4122 UID used as a correlation id.",
+                                    "key": "x-fapi-interaction-id",
+                                    "value": "proident in"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json; charset=utf-8"
+                                }
+                            ],
+                            "body": "{\n  \"Data\": {\n    \"Account\": [\n      {\n        \"AccountId\": \"id incididunt est dolore\",\n        \"Status\": \"Disabled\",\n        \"StatusUpdateDateTime\": \"2000-02-01T23:08:56.115Z\",\n        \"Currency\": \"CVP\",\n        \"AccountType\": \"Personal\",\n        \"AccountSubType\": \"Loan\",\n        \"Description\": \"do id quis eni\",\n        \"Nickname\": \"reprehenderit labore commodo ipsum\",\n        \"OpeningDate\": \"1987-02-10T03:35:57.571Z\",\n        \"MaturityDate\": \"1994-02-27T12:07:26.221Z\",\n        \"SwitchStatus\": \"occaecat laboris voluptate\",\n        \"Account\": [\n          {\n            \"SchemeName\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Identification\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Name\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"SecondaryIdentification\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"SchemeName\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Identification\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Name\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"SecondaryIdentification\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ],\n        \"Servicer\": {\n          \"SchemeName\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Identification\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        }\n      },\n      {\n        \"AccountId\": \"et enim labore\",\n        \"Status\": \"Disabled\",\n        \"StatusUpdateDateTime\": \"1947-09-16T09:58:19.874Z\",\n        \"Currency\": \"NZU\",\n        \"AccountType\": \"Personal\",\n        \"AccountSubType\": \"CreditCard\",\n        \"Description\": \"dolor sed nisi est\",\n        \"Nickname\": \"anim cupidatat in\",\n        \"OpeningDate\": \"2001-02-05T04:32:16.256Z\",\n        \"MaturityDate\": \"1960-11-30T07:25:33.075Z\",\n        \"SwitchStatus\": \"dolore cupidatat consectetur eu\",\n        \"Account\": [\n          {\n            \"SchemeName\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Identification\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Name\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"SecondaryIdentification\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"SchemeName\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Identification\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Name\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"SecondaryIdentification\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ],\n        \"Servicer\": {\n          \"SchemeName\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Identification\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        }\n      }\n    ]\n  },\n  \"Links\": {\n    \"Self\": \"https://zKNbfqZc.fwhzFm.VCuws27nD.bNczoNj0MKchrN4u9mBYEwQHfW.DlZmCCkR8G\",\n    \"First\": \"https://SViPHzrzbiWbgWZKJ.lyzTB.-KgbGyI1SGrQVoE4UXuzonu-HalSOWxC8qzbitYwUhbJFqu+q1A0pIYHXGZBN8Gp\",\n    \"Prev\": \"https://aPSGnNdqKgBecwAT.ufhYZ1mppsUUp,uRLBbYtrYV+pxxw,XtAC9eaQO\",\n    \"Next\": \"http://UNgFDjOFSliqpOpcIFqqwqKAOuBsPeIRZ.tprGiDLstTKH5OnIT3Ww2WpxXWKV9bMesKzPJNB12\",\n    \"Last\": \"http://NxBufDbZEDPNMhLG.rpeoCG+mYEZFYrlX4NFJ-4IwWQRXcd+7w,OpLqmQ2NWcxo7CSjFGvE\"\n  },\n  \"Meta\": {\n    \"TotalPages\": 19504989,\n    \"FirstAvailableDateTime\": \"1978-09-15T15:08:33.727Z\",\n    \"LastAvailableDateTime\": \"1995-01-30T19:46:47.612Z\"\n  }\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "85a35c61-b73a-49e7-a575-70e7dc829b4c",
+                            "name": "Bad request",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "accounts"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "header": [
+                                    {
+                                        "disabled": false,
+                                        "description": "The time when the PSU last logged in with the TPP. \nAll dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below: \nSun, 10 Sep 2017 19:43:31 UTC",
+                                        "key": "x-fapi-auth-date",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "The PSU's IP address if the PSU is currently logged in with the TPP.",
+                                        "key": "x-fapi-customer-ip-address",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "An RFC4122 UID used as a correlation id.",
+                                        "key": "x-fapi-interaction-id",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "(Required) An Authorisation Token as per https://tools.ietf.org/html/rfc6750",
+                                        "key": "Authorization",
+                                        "value": "proident in"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "Indicates the user-agent that the PSU is using.",
+                                        "key": "x-customer-user-agent",
+                                        "value": "<string>"
+                                    }
+                                ],
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Bad Request",
+                            "code": 400,
+                            "header": [
+                                {
+                                    "disabled": false,
+                                    "description": "(Required) An RFC4122 UID used as a correlation id.",
+                                    "key": "x-fapi-interaction-id",
+                                    "value": "proident in"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json; charset=utf-8"
+                                }
+                            ],
+                            "body": "{\n  \"Code\": \"commodo aliquip consecte\",\n  \"Message\": \"dolore do amet enim sit\",\n  \"Errors\": [\n    {\n      \"ErrorCode\": \"in Lorem aute Duis\",\n      \"Message\": \"non dolore sint deserunt\",\n      \"Path\": \"anim dol\",\n      \"Url\": \"velit officia\"\n    }\n  ],\n  \"Id\": \"magna a\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "6b960b15-818d-43b1-8f23-65bcbaaf83cc",
+                            "name": "Unauthorized",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "accounts"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "header": [
+                                    {
+                                        "disabled": false,
+                                        "description": "The time when the PSU last logged in with the TPP. \nAll dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below: \nSun, 10 Sep 2017 19:43:31 UTC",
+                                        "key": "x-fapi-auth-date",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "The PSU's IP address if the PSU is currently logged in with the TPP.",
+                                        "key": "x-fapi-customer-ip-address",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "An RFC4122 UID used as a correlation id.",
+                                        "key": "x-fapi-interaction-id",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "(Required) An Authorisation Token as per https://tools.ietf.org/html/rfc6750",
+                                        "key": "Authorization",
+                                        "value": "proident in"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "Indicates the user-agent that the PSU is using.",
+                                        "key": "x-customer-user-agent",
+                                        "value": "<string>"
+                                    }
+                                ],
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Unauthorized",
+                            "code": 401,
+                            "header": [
+                                {
+                                    "disabled": false,
+                                    "description": "(Required) An RFC4122 UID used as a correlation id.",
+                                    "key": "x-fapi-interaction-id",
+                                    "value": "proident in"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/plain"
+                                }
+                            ],
+                            "body": "",
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        },
+                        {
+                            "id": "fc7de6be-f032-41d9-ba53-7b5cbead6bd5",
+                            "name": "Forbidden",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "accounts"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "header": [
+                                    {
+                                        "disabled": false,
+                                        "description": "The time when the PSU last logged in with the TPP. \nAll dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below: \nSun, 10 Sep 2017 19:43:31 UTC",
+                                        "key": "x-fapi-auth-date",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "The PSU's IP address if the PSU is currently logged in with the TPP.",
+                                        "key": "x-fapi-customer-ip-address",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "An RFC4122 UID used as a correlation id.",
+                                        "key": "x-fapi-interaction-id",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "(Required) An Authorisation Token as per https://tools.ietf.org/html/rfc6750",
+                                        "key": "Authorization",
+                                        "value": "proident in"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "Indicates the user-agent that the PSU is using.",
+                                        "key": "x-customer-user-agent",
+                                        "value": "<string>"
+                                    }
+                                ],
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Forbidden",
+                            "code": 403,
+                            "header": [
+                                {
+                                    "disabled": false,
+                                    "description": "(Required) An RFC4122 UID used as a correlation id.",
+                                    "key": "x-fapi-interaction-id",
+                                    "value": "proident in"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json; charset=utf-8"
+                                }
+                            ],
+                            "body": "{\n  \"Code\": \"commodo aliquip consecte\",\n  \"Message\": \"dolore do amet enim sit\",\n  \"Errors\": [\n    {\n      \"ErrorCode\": \"in Lorem aute Duis\",\n      \"Message\": \"non dolore sint deserunt\",\n      \"Path\": \"anim dol\",\n      \"Url\": \"velit officia\"\n    }\n  ],\n  \"Id\": \"magna a\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "27238f82-9651-4493-992a-a28f3a1cc07c",
+                            "name": "Method Not Allowed",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "accounts"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "header": [
+                                    {
+                                        "disabled": false,
+                                        "description": "The time when the PSU last logged in with the TPP. \nAll dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below: \nSun, 10 Sep 2017 19:43:31 UTC",
+                                        "key": "x-fapi-auth-date",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "The PSU's IP address if the PSU is currently logged in with the TPP.",
+                                        "key": "x-fapi-customer-ip-address",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "An RFC4122 UID used as a correlation id.",
+                                        "key": "x-fapi-interaction-id",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "(Required) An Authorisation Token as per https://tools.ietf.org/html/rfc6750",
+                                        "key": "Authorization",
+                                        "value": "proident in"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "Indicates the user-agent that the PSU is using.",
+                                        "key": "x-customer-user-agent",
+                                        "value": "<string>"
+                                    }
+                                ],
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Method Not Allowed",
+                            "code": 405,
+                            "header": [
+                                {
+                                    "disabled": false,
+                                    "description": "(Required) An RFC4122 UID used as a correlation id.",
+                                    "key": "x-fapi-interaction-id",
+                                    "value": "proident in"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/plain"
+                                }
+                            ],
+                            "body": "",
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        },
+                        {
+                            "id": "493f77c1-5297-43e6-aa22-ecd683e4e2f2",
+                            "name": "Not Acceptable",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "accounts"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "header": [
+                                    {
+                                        "disabled": false,
+                                        "description": "The time when the PSU last logged in with the TPP. \nAll dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below: \nSun, 10 Sep 2017 19:43:31 UTC",
+                                        "key": "x-fapi-auth-date",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "The PSU's IP address if the PSU is currently logged in with the TPP.",
+                                        "key": "x-fapi-customer-ip-address",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "An RFC4122 UID used as a correlation id.",
+                                        "key": "x-fapi-interaction-id",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "(Required) An Authorisation Token as per https://tools.ietf.org/html/rfc6750",
+                                        "key": "Authorization",
+                                        "value": "proident in"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "Indicates the user-agent that the PSU is using.",
+                                        "key": "x-customer-user-agent",
+                                        "value": "<string>"
+                                    }
+                                ],
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Not Acceptable",
+                            "code": 406,
+                            "header": [
+                                {
+                                    "disabled": false,
+                                    "description": "(Required) An RFC4122 UID used as a correlation id.",
+                                    "key": "x-fapi-interaction-id",
+                                    "value": "proident in"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/plain"
+                                }
+                            ],
+                            "body": "",
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        },
+                        {
+                            "id": "bd9bd65e-d0ed-49c3-a8a0-9147659d9d3c",
+                            "name": "Too Many Requests",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "accounts"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "header": [
+                                    {
+                                        "disabled": false,
+                                        "description": "The time when the PSU last logged in with the TPP. \nAll dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below: \nSun, 10 Sep 2017 19:43:31 UTC",
+                                        "key": "x-fapi-auth-date",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "The PSU's IP address if the PSU is currently logged in with the TPP.",
+                                        "key": "x-fapi-customer-ip-address",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "An RFC4122 UID used as a correlation id.",
+                                        "key": "x-fapi-interaction-id",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "(Required) An Authorisation Token as per https://tools.ietf.org/html/rfc6750",
+                                        "key": "Authorization",
+                                        "value": "proident in"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "Indicates the user-agent that the PSU is using.",
+                                        "key": "x-customer-user-agent",
+                                        "value": "<string>"
+                                    }
+                                ],
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Too Many Requests",
+                            "code": 429,
+                            "header": [
+                                {
+                                    "disabled": false,
+                                    "description": "Number in seconds to wait",
+                                    "key": "Retry-After",
+                                    "value": "-92321450"
+                                },
+                                {
+                                    "disabled": false,
+                                    "description": "An RFC4122 UID used as a correlation id.",
+                                    "key": "x-fapi-interaction-id",
+                                    "value": "proident in"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/plain"
+                                }
+                            ],
+                            "body": "",
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        },
+                        {
+                            "id": "d4fa37e5-d652-4188-a041-2cf7b7c8c7d3",
+                            "name": "Internal Server Error",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "accounts"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "header": [
+                                    {
+                                        "disabled": false,
+                                        "description": "The time when the PSU last logged in with the TPP. \nAll dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below: \nSun, 10 Sep 2017 19:43:31 UTC",
+                                        "key": "x-fapi-auth-date",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "The PSU's IP address if the PSU is currently logged in with the TPP.",
+                                        "key": "x-fapi-customer-ip-address",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "An RFC4122 UID used as a correlation id.",
+                                        "key": "x-fapi-interaction-id",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "(Required) An Authorisation Token as per https://tools.ietf.org/html/rfc6750",
+                                        "key": "Authorization",
+                                        "value": "proident in"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "Indicates the user-agent that the PSU is using.",
+                                        "key": "x-customer-user-agent",
+                                        "value": "<string>"
+                                    }
+                                ],
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Internal Server Error",
+                            "code": 500,
+                            "header": [
+                                {
+                                    "disabled": false,
+                                    "description": "(Required) An RFC4122 UID used as a correlation id.",
+                                    "key": "x-fapi-interaction-id",
+                                    "value": "proident in"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json; charset=utf-8"
+                                }
+                            ],
+                            "body": "{\n  \"Code\": \"commodo aliquip consecte\",\n  \"Message\": \"dolore do amet enim sit\",\n  \"Errors\": [\n    {\n      \"ErrorCode\": \"in Lorem aute Duis\",\n      \"Message\": \"non dolore sint deserunt\",\n      \"Path\": \"anim dol\",\n      \"Url\": \"velit officia\"\n    }\n  ],\n  \"Id\": \"magna a\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": [],
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    }
+                },
+                {
+                    "id": "a21cc52a-bf65-4afc-bd0c-ad789829b32d",
+                    "name": "{{baseUrl}}/accounts/:AccountId",
+                    "request": {
+                        "name": "{{baseUrl}}/accounts/:AccountId",
+                        "description": {},
+                        "url": {
+                            "path": [
+                                "accounts",
+                                ":AccountId"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "<string>",
+                                    "key": "AccountId",
+                                    "description": "(Required) AccountId"
+                                }
+                            ]
+                        },
+                        "header": [
+                            {
+                                "disabled": false,
+                                "description": "The time when the PSU last logged in with the TPP. \nAll dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below: \nSun, 10 Sep 2017 19:43:31 UTC",
+                                "key": "x-fapi-auth-date",
+                                "value": "<string>"
+                            },
+                            {
+                                "disabled": false,
+                                "description": "The PSU's IP address if the PSU is currently logged in with the TPP.",
+                                "key": "x-fapi-customer-ip-address",
+                                "value": "<string>"
+                            },
+                            {
+                                "disabled": false,
+                                "description": "An RFC4122 UID used as a correlation id.",
+                                "key": "x-fapi-interaction-id",
+                                "value": "<string>"
+                            },
+                            {
+                                "disabled": false,
+                                "description": "Indicates the user-agent that the PSU is using.",
+                                "key": "x-customer-user-agent",
+                                "value": "<string>"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application/json; charset=utf-8"
+                            }
+                        ],
+                        "method": "GET"
+                    },
+                    "response": [
+                        {
+                            "id": "dee4adfe-a638-43df-84dd-9c9bcbb8cbde",
+                            "name": "Accounts Read",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "accounts",
+                                        ":AccountId"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "AccountId",
+                                            "description": "(Required) AccountId"
+                                        }
+                                    ]
+                                },
+                                "header": [
+                                    {
+                                        "disabled": false,
+                                        "description": "The time when the PSU last logged in with the TPP. \nAll dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below: \nSun, 10 Sep 2017 19:43:31 UTC",
+                                        "key": "x-fapi-auth-date",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "The PSU's IP address if the PSU is currently logged in with the TPP.",
+                                        "key": "x-fapi-customer-ip-address",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "An RFC4122 UID used as a correlation id.",
+                                        "key": "x-fapi-interaction-id",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "(Required) An Authorisation Token as per https://tools.ietf.org/html/rfc6750",
+                                        "key": "Authorization",
+                                        "value": "proident in"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "Indicates the user-agent that the PSU is using.",
+                                        "key": "x-customer-user-agent",
+                                        "value": "<string>"
+                                    }
+                                ],
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "disabled": false,
+                                    "description": "(Required) An RFC4122 UID used as a correlation id.",
+                                    "key": "x-fapi-interaction-id",
+                                    "value": "proident in"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json; charset=utf-8"
+                                }
+                            ],
+                            "body": "{\n  \"Data\": {\n    \"Account\": [\n      {\n        \"AccountId\": \"nisi adipisicing\",\n        \"Status\": \"Deleted\",\n        \"StatusUpdateDateTime\": \"1956-08-15T11:08:40.977Z\",\n        \"Currency\": \"RKK\",\n        \"AccountType\": \"Business\",\n        \"AccountSubType\": \"PrePaidCard\",\n        \"Description\": \"reprehender\",\n        \"Nickname\": \"deserunt nisi D\",\n        \"OpeningDate\": \"1949-09-19T17:29:03.925Z\",\n        \"MaturityDate\": \"2018-02-03T01:23:11.009Z\",\n        \"SwitchStatus\": \"qui incididunt dolor et\",\n        \"Account\": [\n          {\n            \"SchemeName\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Identification\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Name\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"SecondaryIdentification\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"SchemeName\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Identification\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Name\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"SecondaryIdentification\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ],\n        \"Servicer\": {\n          \"SchemeName\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Identification\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        }\n      },\n      {\n        \"AccountId\": \"dolore non labor\",\n        \"Status\": \"ProForma\",\n        \"StatusUpdateDateTime\": \"1970-01-20T15:31:29.393Z\",\n        \"Currency\": \"UPQ\",\n        \"AccountType\": \"Personal\",\n        \"AccountSubType\": \"PrePaidCard\",\n        \"Description\": \"Duis irure si\",\n        \"Nickname\": \"nulla es\",\n        \"OpeningDate\": \"1997-04-30T09:20:43.154Z\",\n        \"MaturityDate\": \"2021-01-05T15:37:14.929Z\",\n        \"SwitchStatus\": \"exercitation\",\n        \"Account\": [\n          {\n            \"SchemeName\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Identification\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Name\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"SecondaryIdentification\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"SchemeName\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Identification\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Name\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"SecondaryIdentification\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ],\n        \"Servicer\": {\n          \"SchemeName\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Identification\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        }\n      }\n    ]\n  },\n  \"Links\": {\n    \"Self\": \"https://mUIIVoS.asxuX+aBE6jFuzy5SY.blfnJ14\",\n    \"First\": \"https://FdnjvEsBXSGirNVxnlGQFIkgsWXllqP.zcN.8dy.75NKcE7OYVzzK\",\n    \"Prev\": \"https://KXIbt.khlqH+uvUN,F50W.hTEXG1u4lxFnxzr1Dq3l+QBHuDduAGjVTD7mL5IezzOh\",\n    \"Next\": \"https://WqBikKTC.gdlBEmDVTjYrYANyvS\",\n    \"Last\": \"https://BKOidtXabOblKgRFcHgaSTjQSWuckCSY.byjayX7-+k3,I.tc5jn8hzpOFqYEDkmBtAGACBiIaC1HkPGRhmOiWG.9zR56171x1Aj\"\n  },\n  \"Meta\": {\n    \"TotalPages\": 33733403,\n    \"FirstAvailableDateTime\": \"1944-10-03T02:06:02.471Z\",\n    \"LastAvailableDateTime\": \"2012-12-14T02:32:04.501Z\"\n  }\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "9d44c9ab-7ca2-46e0-b91e-5fafceeb1a0a",
+                            "name": "Bad request",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "accounts",
+                                        ":AccountId"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "AccountId",
+                                            "description": "(Required) AccountId"
+                                        }
+                                    ]
+                                },
+                                "header": [
+                                    {
+                                        "disabled": false,
+                                        "description": "The time when the PSU last logged in with the TPP. \nAll dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below: \nSun, 10 Sep 2017 19:43:31 UTC",
+                                        "key": "x-fapi-auth-date",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "The PSU's IP address if the PSU is currently logged in with the TPP.",
+                                        "key": "x-fapi-customer-ip-address",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "An RFC4122 UID used as a correlation id.",
+                                        "key": "x-fapi-interaction-id",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "(Required) An Authorisation Token as per https://tools.ietf.org/html/rfc6750",
+                                        "key": "Authorization",
+                                        "value": "proident in"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "Indicates the user-agent that the PSU is using.",
+                                        "key": "x-customer-user-agent",
+                                        "value": "<string>"
+                                    }
+                                ],
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Bad Request",
+                            "code": 400,
+                            "header": [
+                                {
+                                    "disabled": false,
+                                    "description": "(Required) An RFC4122 UID used as a correlation id.",
+                                    "key": "x-fapi-interaction-id",
+                                    "value": "proident in"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json; charset=utf-8"
+                                }
+                            ],
+                            "body": "{\n  \"Code\": \"commodo aliquip consecte\",\n  \"Message\": \"dolore do amet enim sit\",\n  \"Errors\": [\n    {\n      \"ErrorCode\": \"in Lorem aute Duis\",\n      \"Message\": \"non dolore sint deserunt\",\n      \"Path\": \"anim dol\",\n      \"Url\": \"velit officia\"\n    }\n  ],\n  \"Id\": \"magna a\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "fcf4efe7-8805-40f0-a34b-22b900bc265e",
+                            "name": "Unauthorized",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "accounts",
+                                        ":AccountId"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "AccountId",
+                                            "description": "(Required) AccountId"
+                                        }
+                                    ]
+                                },
+                                "header": [
+                                    {
+                                        "disabled": false,
+                                        "description": "The time when the PSU last logged in with the TPP. \nAll dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below: \nSun, 10 Sep 2017 19:43:31 UTC",
+                                        "key": "x-fapi-auth-date",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "The PSU's IP address if the PSU is currently logged in with the TPP.",
+                                        "key": "x-fapi-customer-ip-address",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "An RFC4122 UID used as a correlation id.",
+                                        "key": "x-fapi-interaction-id",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "(Required) An Authorisation Token as per https://tools.ietf.org/html/rfc6750",
+                                        "key": "Authorization",
+                                        "value": "proident in"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "Indicates the user-agent that the PSU is using.",
+                                        "key": "x-customer-user-agent",
+                                        "value": "<string>"
+                                    }
+                                ],
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Unauthorized",
+                            "code": 401,
+                            "header": [
+                                {
+                                    "disabled": false,
+                                    "description": "(Required) An RFC4122 UID used as a correlation id.",
+                                    "key": "x-fapi-interaction-id",
+                                    "value": "proident in"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/plain"
+                                }
+                            ],
+                            "body": "",
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        },
+                        {
+                            "id": "796171e0-2928-47f9-a554-64a0f25255dd",
+                            "name": "Forbidden",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "accounts",
+                                        ":AccountId"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "AccountId",
+                                            "description": "(Required) AccountId"
+                                        }
+                                    ]
+                                },
+                                "header": [
+                                    {
+                                        "disabled": false,
+                                        "description": "The time when the PSU last logged in with the TPP. \nAll dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below: \nSun, 10 Sep 2017 19:43:31 UTC",
+                                        "key": "x-fapi-auth-date",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "The PSU's IP address if the PSU is currently logged in with the TPP.",
+                                        "key": "x-fapi-customer-ip-address",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "An RFC4122 UID used as a correlation id.",
+                                        "key": "x-fapi-interaction-id",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "(Required) An Authorisation Token as per https://tools.ietf.org/html/rfc6750",
+                                        "key": "Authorization",
+                                        "value": "proident in"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "Indicates the user-agent that the PSU is using.",
+                                        "key": "x-customer-user-agent",
+                                        "value": "<string>"
+                                    }
+                                ],
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Forbidden",
+                            "code": 403,
+                            "header": [
+                                {
+                                    "disabled": false,
+                                    "description": "(Required) An RFC4122 UID used as a correlation id.",
+                                    "key": "x-fapi-interaction-id",
+                                    "value": "proident in"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json; charset=utf-8"
+                                }
+                            ],
+                            "body": "{\n  \"Code\": \"commodo aliquip consecte\",\n  \"Message\": \"dolore do amet enim sit\",\n  \"Errors\": [\n    {\n      \"ErrorCode\": \"in Lorem aute Duis\",\n      \"Message\": \"non dolore sint deserunt\",\n      \"Path\": \"anim dol\",\n      \"Url\": \"velit officia\"\n    }\n  ],\n  \"Id\": \"magna a\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "d79a5249-f87a-4714-a104-30c1477292a0",
+                            "name": "Method Not Allowed",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "accounts",
+                                        ":AccountId"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "AccountId",
+                                            "description": "(Required) AccountId"
+                                        }
+                                    ]
+                                },
+                                "header": [
+                                    {
+                                        "disabled": false,
+                                        "description": "The time when the PSU last logged in with the TPP. \nAll dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below: \nSun, 10 Sep 2017 19:43:31 UTC",
+                                        "key": "x-fapi-auth-date",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "The PSU's IP address if the PSU is currently logged in with the TPP.",
+                                        "key": "x-fapi-customer-ip-address",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "An RFC4122 UID used as a correlation id.",
+                                        "key": "x-fapi-interaction-id",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "(Required) An Authorisation Token as per https://tools.ietf.org/html/rfc6750",
+                                        "key": "Authorization",
+                                        "value": "proident in"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "Indicates the user-agent that the PSU is using.",
+                                        "key": "x-customer-user-agent",
+                                        "value": "<string>"
+                                    }
+                                ],
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Method Not Allowed",
+                            "code": 405,
+                            "header": [
+                                {
+                                    "disabled": false,
+                                    "description": "(Required) An RFC4122 UID used as a correlation id.",
+                                    "key": "x-fapi-interaction-id",
+                                    "value": "proident in"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/plain"
+                                }
+                            ],
+                            "body": "",
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        },
+                        {
+                            "id": "0e0054be-27fb-4a97-8b6c-1c73f64fa748",
+                            "name": "Not Acceptable",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "accounts",
+                                        ":AccountId"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "AccountId",
+                                            "description": "(Required) AccountId"
+                                        }
+                                    ]
+                                },
+                                "header": [
+                                    {
+                                        "disabled": false,
+                                        "description": "The time when the PSU last logged in with the TPP. \nAll dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below: \nSun, 10 Sep 2017 19:43:31 UTC",
+                                        "key": "x-fapi-auth-date",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "The PSU's IP address if the PSU is currently logged in with the TPP.",
+                                        "key": "x-fapi-customer-ip-address",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "An RFC4122 UID used as a correlation id.",
+                                        "key": "x-fapi-interaction-id",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "(Required) An Authorisation Token as per https://tools.ietf.org/html/rfc6750",
+                                        "key": "Authorization",
+                                        "value": "proident in"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "Indicates the user-agent that the PSU is using.",
+                                        "key": "x-customer-user-agent",
+                                        "value": "<string>"
+                                    }
+                                ],
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Not Acceptable",
+                            "code": 406,
+                            "header": [
+                                {
+                                    "disabled": false,
+                                    "description": "(Required) An RFC4122 UID used as a correlation id.",
+                                    "key": "x-fapi-interaction-id",
+                                    "value": "proident in"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/plain"
+                                }
+                            ],
+                            "body": "",
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        },
+                        {
+                            "id": "006064c3-8c43-40cb-b114-0a1b4e0f89b3",
+                            "name": "Too Many Requests",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "accounts",
+                                        ":AccountId"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "AccountId",
+                                            "description": "(Required) AccountId"
+                                        }
+                                    ]
+                                },
+                                "header": [
+                                    {
+                                        "disabled": false,
+                                        "description": "The time when the PSU last logged in with the TPP. \nAll dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below: \nSun, 10 Sep 2017 19:43:31 UTC",
+                                        "key": "x-fapi-auth-date",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "The PSU's IP address if the PSU is currently logged in with the TPP.",
+                                        "key": "x-fapi-customer-ip-address",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "An RFC4122 UID used as a correlation id.",
+                                        "key": "x-fapi-interaction-id",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "(Required) An Authorisation Token as per https://tools.ietf.org/html/rfc6750",
+                                        "key": "Authorization",
+                                        "value": "proident in"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "Indicates the user-agent that the PSU is using.",
+                                        "key": "x-customer-user-agent",
+                                        "value": "<string>"
+                                    }
+                                ],
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Too Many Requests",
+                            "code": 429,
+                            "header": [
+                                {
+                                    "disabled": false,
+                                    "description": "Number in seconds to wait",
+                                    "key": "Retry-After",
+                                    "value": "-92321450"
+                                },
+                                {
+                                    "disabled": false,
+                                    "description": "An RFC4122 UID used as a correlation id.",
+                                    "key": "x-fapi-interaction-id",
+                                    "value": "proident in"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/plain"
+                                }
+                            ],
+                            "body": "",
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        },
+                        {
+                            "id": "0bf2f502-af1c-49fd-a9ac-a3f1d3e70860",
+                            "name": "Internal Server Error",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "accounts",
+                                        ":AccountId"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "AccountId",
+                                            "description": "(Required) AccountId"
+                                        }
+                                    ]
+                                },
+                                "header": [
+                                    {
+                                        "disabled": false,
+                                        "description": "The time when the PSU last logged in with the TPP. \nAll dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below: \nSun, 10 Sep 2017 19:43:31 UTC",
+                                        "key": "x-fapi-auth-date",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "The PSU's IP address if the PSU is currently logged in with the TPP.",
+                                        "key": "x-fapi-customer-ip-address",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "An RFC4122 UID used as a correlation id.",
+                                        "key": "x-fapi-interaction-id",
+                                        "value": "<string>"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "(Required) An Authorisation Token as per https://tools.ietf.org/html/rfc6750",
+                                        "key": "Authorization",
+                                        "value": "proident in"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "description": "Indicates the user-agent that the PSU is using.",
+                                        "key": "x-customer-user-agent",
+                                        "value": "<string>"
+                                    }
+                                ],
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Internal Server Error",
+                            "code": 500,
+                            "header": [
+                                {
+                                    "disabled": false,
+                                    "description": "(Required) An RFC4122 UID used as a correlation id.",
+                                    "key": "x-fapi-interaction-id",
+                                    "value": "proident in"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json; charset=utf-8"
+                                }
+                            ],
+                            "body": "{\n  \"Code\": \"commodo aliquip consecte\",\n  \"Message\": \"dolore do amet enim sit\",\n  \"Errors\": [\n    {\n      \"ErrorCode\": \"in Lorem aute Duis\",\n      \"Message\": \"non dolore sint deserunt\",\n      \"Path\": \"anim dol\",\n      \"Url\": \"velit officia\"\n    }\n  ],\n  \"Id\": \"magna a\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": [],
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    }
+                }
+            ],
+            "event": []
+        }
+    ],
+    "event": [],
+    "variable": [
+        {
+            "type": "string",
+            "value": "/",
+            "key": "baseUrl"
+        }
+    ],
+    "info": {
+        "_postman_id": "a4038ce9-3cd6-4776-bec6-a241222cb7e7",
+        "name": "accounts",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": {
+            "content": "accounts\n\nContact Support:\n Name: Service Desk\n Email: ServiceDesk@openbanking.org.uk",
+            "type": "text/plain"
+        }
+    }
+}
